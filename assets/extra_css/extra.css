@@ -1,9 +1,10 @@
 body {
     background-image: url('../../assets/images/image.webp');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 100% 100%;
     background-size: cover;
     background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .header, .md-footer, .md-nav, .md-sidebar, .md-content {
