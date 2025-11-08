@@ -1,0 +1,20 @@
+body {
+    background-image: url('../../assets/images/image.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header, .md-footer, .md-nav, .md-sidebar, .md-content {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+footer nav {
+      display: none !important;
+}
+
+header {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
