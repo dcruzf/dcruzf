@@ -1,0 +1,55 @@
+site_name: /home/dcruzf
+site_description: "dcruzf website"
+repo_url: https://github.com/dcruzf
+repo_name: dcruzf
+docs_dir: dcruzf
+
+theme:
+  name: material
+
+  font:
+    text: Noto Sans Mono
+    code: Noto Sans Mono
+
+  features:
+#    - navigation.drawer
+#    - navigation.instant
+#    - navigation.instant.progress
+#    - navigation.tracking
+#    - navigation.hide
+#    - toc.follow
+    
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      
+      scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/circle-half-full
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/circle-half-full
+
+plugins:
+  - privacy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  generator: false
+
+extra_css:
+  - assets/extra_css/extra.css
+
+nav:
+  - index: index.md
