@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <!-- PyScript assets -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <!-- PyScript runtime -->
+  <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+{% endblock %}

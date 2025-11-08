@@ -1,11 +1,15 @@
 site_name: /home/dcruzf
-site_description: "dcruzf website"
+site_description: "dcruzf"
 repo_url: https://github.com/dcruzf
 repo_name: dcruzf
 docs_dir: dcruzf
 
 theme:
   name: material
+  icon: assets/images/delta.svg
+  logo: assets/images/delta.svg
+  favicon: assets/images/delta.svg
+  custom_dir: overrides
 
   font:
     text: Noto Sans Mono
@@ -22,19 +26,9 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       
-      scheme: default
-      primary: black
-      accent: black
-      toggle:
-        icon: material/circle-half-full
-        name: Switch to dark mode
-
-    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: black
-      toggle:
-        icon: material/circle-half-full
 
 plugins:
   - privacy
@@ -44,6 +38,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - md_in_html
 
 extra:
   generator: false
@@ -51,5 +46,6 @@ extra:
 extra_css:
   - assets/extra_css/extra.css
 
+
 nav:
-  - index: index.md
+  - index.md
