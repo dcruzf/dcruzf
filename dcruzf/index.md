@@ -4,12 +4,25 @@ hide:
   - toc
 ---
 
-# Hello
+# hello
+```pycon
+>>> print("Welcome!")
+Welcome!
+```
 
-<py-repl auto-generate="true">
-print("Welcome!")
-</py-repl>
 
-<script type="py" src="assets/main.py" terminal worker></script>
+```bash
+$ whoami
+daniel
+```
 
-<py-repl auto-generate="true"></py-repl>
+
+```md
+# test
+texto
+
+## test2
+**mais** *texto* ~~text~~
+
+[https://daniel.ci.ufpb.br](https://daniel.ci.ufpb.br)
+```

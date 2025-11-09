@@ -23,3 +23,39 @@ header {
     background-color: transparent !important;
     box-shadow: none !important;
 }
+
+.md-typeset code {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-radius: .5rem !important;
+}
+
+.md-header__title {
+    font-family: monospace;
+}
+article {
+    font-family: monospace;
+}
+
+.md-header__button.md-logo {
+    display: none !important;
+}
+
+.highlight .gd { 
+  text-decoration: line-through
+} 
+.highlight .ge { 
+  font-style: italic
+} /* Generic.Emph */
+.highlight .gh {
+  font-weight: bold;
+  color: white;
+} /* Generic.Heading */
+.highlight .gp {
+  font-weight: bold
+} /* Generic.Prompt */
+.highlight .gs {
+  font-weight: bold
+} /* Generic.Strong */
+.highlight .gu {
+  color: whitesmoke;
+} /* Generic.Subheading *
