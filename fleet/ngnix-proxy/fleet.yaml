@@ -1,0 +1,6 @@
+defaultNamespace: nginx-proxy
+targetCustomizations:
+  - name: nginx-proxy
+    yaml:
+      overlays:
+        - .
