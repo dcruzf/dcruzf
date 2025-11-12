@@ -1,7 +1,4 @@
-defaultNamespace: nginx-proxy
-targetCustomizations:
-  - name: nginx-proxy
-    targetNamespace: default
-    yaml:
-      overlays:
-        - .
+targetNamespace: ingress-nginx
+helm:
+  releaseName: github-pages-proxy
+  chart: ./charts/github-proxy
