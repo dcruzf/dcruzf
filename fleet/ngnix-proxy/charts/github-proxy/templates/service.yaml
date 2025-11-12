@@ -7,5 +7,6 @@ spec:
   type: ExternalName
   externalName: dcruzf.github.io
   ports:
-    - port: 443
-      targetPort: 443
+    - port: 80
+    protocol: TCP
+      targetPort: 80
