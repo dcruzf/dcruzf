@@ -12,6 +12,8 @@ metadata:
 
     # Reescrita básica
     nginx.ingress.kubernetes.io/rewrite-target: /dcruzf/
+    
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS" 
 
 spec:
   ingressClassName: nginx
