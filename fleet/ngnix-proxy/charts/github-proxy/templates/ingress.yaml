@@ -11,7 +11,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 
     # Reescrita básica
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /dcruzf/
 
 spec:
   ingressClassName: nginx

@@ -5,7 +5,7 @@ metadata:
   namespace: ingress-nginx
 spec:
   type: ExternalName
-  externalName: dcruzf.github.io/dcruzf/
+  externalName: dcruzf.github.io
   ports:
     - port: 443
       targetPort: 443
