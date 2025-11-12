@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
 
     # Define o issuer do Let's Encrypt (você deve ter um issuer com esse nome)
-    cert-manager.io/cluster-issuer: letsencrypt-prod
+    cert-manager.io/cluster-issuer: letsencrypt-production
 
     # Reescrita básica
     nginx.ingress.kubernetes.io/rewrite-target: /dcruzf/
