@@ -1,4 +1,0 @@
-resources:
-  - namespace.yaml
-  - cluster-issuer.yaml
-  - ingress.yaml

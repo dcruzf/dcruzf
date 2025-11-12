@@ -1,0 +1,34 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: github-pages-proxy
+  namespace: ingress-nginx
+  annotations:
+    # Redireciona automaticamente HTTP → HTTPS
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+
+    # Define o issuer do Let's Encrypt (você deve ter um issuer com esse nome)
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+
+    # Reescrita básica
+    nginx.ingress.kubernetes.io/rewrite-target: /
+
+spec:
+  ingressClassName: nginx
+
+  tls:
+    - hosts:
+        - daniel.ci.ufpb.br     # seu domínio público
+      secretName: github-pages-tls   # cert-manager vai criar esse secret
+
+  rules:
+    - host: daniel.ci.ufpb.br
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: github-pages
+                port:
+                  number: 443
